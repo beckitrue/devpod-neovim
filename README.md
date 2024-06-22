@@ -14,6 +14,8 @@ I want to see if configuring a devpod is worth the time it takes to configure on
 is that I'll learn something new about configuring development environments. Best case is that I'll have a 
 consistent development environment that I can use on any machine.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6vzl7Ba2uRE?si=bm1JTViaIuJgx3OO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Approach
 
 I orginally tried configuring the devpod by loading the packages after the devpod was created and started. 
