@@ -41,6 +41,17 @@ for the specific environment.
 For example, this devpod is using a `go` image, but in my neovim configration files I load Python 
 and Node LSPs. This results in a (non-fatal) error message when running neovim on this devpod.
 
+## Try It Out
+
+You can try out the same configuration that I have by following the instructions below:
+
+1. [Install DevPod](https://devpod.sh/docs/getting-started/install) for your environment
+1. [Install the DevPod CLI](https://devpod.sh/docs/getting-started/install-cli)
+1. Clone this repo
+1. Start Docker
+1. From the repo directory, run `devpod up devpod-neovim . --provider docker --dotfiles https://github.com/beckitrue/dotfiles`
+1. Log into the devpod `ssh devpod-neovim.devpod`
+
 ### Packages Installed
 
 These packages are installed using the `devcontainer.json` file:
@@ -53,26 +64,28 @@ These packages are installed using the `devcontainer.json` file:
 - starship - shell prompt
 - tmux - terminal multiplexer
 
-I installed the following packages manually after logging into the devpod:
-
-- fd-find - using it as part of the default command for `fzf`
-- bat - for syntax highlighting
+### Manual Installations
 
 I installed the dotfiles manually because I don't have an install script. That's something to do in the future.
 I used `stow` to manage the dotfiles after logging into the devpod.
 
+1. From the `~/dotfiles` directory, run `stow --target ~/.config .`
+
+The following packages need to be installed manually after logging into the devpod:
+
+- fd-find - using it as part of the default command for `fzf`
+1. `sudo apt install fd-find`
+1. `mkdir ~/.local/bin`
+1. `ln -s $(which fdfind) ~/.local/bin/fd`
+- bat - for syntax highlighting
+1. `sudo apt install bat`
+1. `ln -s $(which batcat) ~/.local/bin/bat`
 
 ## Usage
 
-1. [Install DevPod](https://devpod.sh/docs/getting-started/install) for your environment
-1. [Install the DevPod CLI](https://devpod.sh/docs/getting-started/install-cli)
-1. Clone this repo
-1. Start Docker
-1. From the repo directory, run `devpod up devpod-neovim . --provider docker --dotfiles https://github.com/beckitrue/dotfiles`
-1. Log into the devpod `ssh devpod-neovim.devpod`
 1. Run `nvim` to start neovim
 1. Logout by typing `exit`
-1. Stop the devpod by running `devpod stop devpod-neovim`
+1. Stop the devpod after logging out by running `devpod stop devpod-neovim`
 
 ## Configuration Changes
 
@@ -82,13 +95,13 @@ making changes to the `devcontainer.json` file.
 ## What I've Learned
 
 - I liked working with the `devcontainer.json` file and the devpod cli better than the DevPod UI. I found it easier to understand.
-- Neovim in the DevPod was just like running from my local machine. I didn't notice any difference after all the packages were installed.
+- Neovim in the DevPod was just like running from my local machine. I didn't notice any difference.
 - I can see the value of having a standard development environment that is portable. This would be great for use in training 
   courses or for onboarding new developers.
 - I need to do a bit more to complete the configuration like installing the dotfiles and setting up the environment variables.
 - I would like to experiment some more with the `devcontainer.json` file to see if I can get the devpod to load all the 
   packages that I need.
-- I suspect that I would need to write a custom Feature to install the packages that I need.
+- I suspect that I would need to write a custom Feature to install some of the packages that I need.
 - I'd like to experiment with some other DevPod providers, such as Kubernetes, and AWS.
 
 ```bash
