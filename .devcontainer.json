@@ -1,0 +1,11 @@
+{
+   "image": "mcr.microsoft.com/devcontainers/go",
+   "features": {
+                "ghcr.io/duduribeiro/devcontainer-features/neovim:1": {},
+		"ghcr.io/devcontainers-contrib/features/fzf:1": {},
+                "ghcr.io/kreemer/features/stow:1": {},
+                "ghcr.io/devcontainers-contrib/features/ripgrep:1": {},
+                "ghcr.io/devcontainers-contrib/features/starship:1": {},
+                "ghcr.io/devcontainers-contrib/features/tmux-apt-get:1": {}
+   }
+}		
