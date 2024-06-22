@@ -66,7 +66,6 @@ These packages are installed using the `devcontainer.json` file:
 - stow - for managing dotfiles
 - fzf - fuzzy finder
 - ripgrep - faster than grep 
-- fd-find - faster than find
 - starship - shell prompt
 - tmux - terminal multiplexer
 
