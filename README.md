@@ -60,7 +60,7 @@ You can try out the same configuration that I have by following the instructions
 
 ### Packages Installed
 
-These packages are installed using the `devcontainer.json` file:
+These packages are installed as `features` using the `devcontainer.json` file:
 
 - neovim - using the Feature that uses the source code
 - stow - for managing dotfiles
@@ -69,26 +69,21 @@ These packages are installed using the `devcontainer.json` file:
 - starship - shell prompt
 - tmux - terminal multiplexer
 
-### Manual Installations
+These binaries are specified as `postStartCommands` in the `devcontainer.json` file.
 
-I installed the dotfiles manually because I don't have an install script. That's something to do in the future.
+- install `fd-find` and `bat` and them to `~/.local/bin`
+
+
+### Manual Installations after Logging In
+
+I manually run `stow` because I don't have an install script. That's something to do in the future.
 I used `stow` to manage the dotfiles after logging into the devpod.
 
 1. From the `~/dotfiles` directory, run `stow --target ~/.config .`
 
-The following packages need to be installed manually after logging into the devpod:
-
-- fd-find - using it as part of the default command for `fzf`
-1. `sudo apt install fd-find`
-1. `mkdir ~/.local/bin`
-1. `ln -s $(which fdfind) ~/.local/bin/fd`
-- bat - for syntax highlighting
-1. `sudo apt install bat`
-1. `ln -s $(which batcat) ~/.local/bin/bat`
-
 ## Usage
 
-1. Run `nvim` to start neovim
+1. Run `nvim` to start neovim and use it as you would on your local machine
 1. Logout by typing `exit`
 1. Stop the devpod after logging out by running `devpod stop devpod-neovim`
 
