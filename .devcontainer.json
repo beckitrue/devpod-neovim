@@ -6,7 +6,7 @@
                 "ghcr.io/devcontainers-contrib/features/fzf:1": {},
                 "ghcr.io/kreemer/features/stow:1": {},
                 "ghcr.io/devcontainers-extra/features/ripgrep:1": {},
-                "ghcr.io/schlich/devcontainer-features/starship:0.1.0": {},
+                "ghcr.io/schlich/devcontainer-features/starship:0.1.5": {},
                 "ghcr.io/duduribeiro/devcontainer-features/tmux:1": {}
    }
 }		
