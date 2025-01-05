@@ -1,4 +1,4 @@
-remote-theme: pages-themes/hacker
+remote-theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
