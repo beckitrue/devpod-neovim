@@ -9,6 +9,8 @@ This is a great way to try Neovim without having to install it on your local mac
 I can definitely see the value of having a standard development environment that is portable. This would also be great 
 for use in training courses or for onboarding new developers, no matter which IDE you use.
 
+You can read more about the approach I took to create this devpod [here](https://beckitrue.github.io/devpod-neovim/).
+
 ## Demo
 
 You can see the demo of the devpod-neovim in action by clicking on the image below:
