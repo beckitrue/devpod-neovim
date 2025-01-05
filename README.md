@@ -28,31 +28,56 @@ and Node LSPs. This results in a (non-fatal) error message when running neovim o
 
 You can try out the same configuration that I have by following the instructions below (assumes you have `docker` installed):
 
+### Initial Setup
+
 1. Optional if you want a GUI:
 [Install DevPod](https://devpod.sh/docs/getting-started/install) for your environment
 1. [Install the DevPod CLI](https://devpod.sh/docs/getting-started/install#optional-install-devpod-cli)
-1. Set your devpod provider to docker: ```devpod provider use docker```
-1. Verify your provider setting: `devpod provider list`
+1. Set your devpod provider to docker: 
+```
+devpod provider use docker
+```
+1. Verify your provider setting: 
+```
+devpod provider list
+```
 1. Clone this repo
 1. Start Docker
-1. From the repo directory, run `devpod up devpod-neovim . --provider docker --dotfiles https://github.com/beckitrue/dotfiles`
-1. Log into the devpod `ssh devpod-neovim.devpod` (no password required)
+1. From the repo directory, run: 
+```
+devpod up devpod-neovim . --provider docker --dotfiles https://github.com/beckitrue/dotfiles
+```
 
 ## Usage
 
-1. Login to the devpd `ssh devpod-neovim.devpod`
-1. Run `nvim` to start neovim and use it as you would on your local machine
+1. Login to the devpod (no password needed): 
+```
+ssh devpod-neovim.devpod
+```
+1. Run `nvim` to start neovim. The first run will install the plugins, so it may take a minute. 
 1. From the main menu select `Lazy` or type `L`
 1. `Update` to update the plugins
+1. 'q' to quit `Lazy` and return to the main menu
+1. 'c' to view the list of config files. You can scroll through the list with the arrow keys and select one to open by pressing enter.
+1. You can [checkhealth](https://neovim.io/doc/user/health.html) by running `:checkhealth`
 1. Logout by typing `exit`
-1. Stop the devpod after logging out by running `devpod stop devpod-neovim`
+1. Stop the devpod after logging out by running: 
+```
+devpod stop devpod-neovim
+```
 
 ## Notes
 
-After you've built the devpod once, you can start it again with `devpod start devpod-neovim`.
+After you've built the devpod once, you can start it again with 
+```
+devpod start devpod-neovim
+```
 
 ## Configuration Changes
 
-You can change the `.devpod/devcontainer.json` file to add or remove packages. Run `devpod up devpod-neovim --recreate` after 
-making changes to the `devcontainer.json` file.
+You can change the `.devpod/devcontainer.json` file to add or remove packages. Run 
+```
+devpod up devpod-neovim --recreate
+``` 
+after making changes to the `devcontainer.json` file.
 
