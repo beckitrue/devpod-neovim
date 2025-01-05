@@ -1,0 +1,17 @@
+remote-theme: pages-themes/hacker
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-archives
+  - jekyll-include-cache
+  - jekyll-remote-theme
+  - jekyll-optional-front-matter
+  - jekyll-default-layout
+  - jekyll-avatar
+  - jekyll-mentions
+  - jekyll-relative-links
+title: "Devcontainer on DevPod PoC"
+description: "Devcontainer on DevPod PoC - A proof of concept to run a devcontainer inside a DevPod"
