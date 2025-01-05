@@ -18,7 +18,7 @@ You can see the demo of the devpod-neovim in action by clicking on the image bel
 ## The DevPod
 
 I'm testing using the same [dotfiles](https://beckitrue/dotfiles) that I use on my local machine.
-I didn't make any changes since this is a PoC. But, for a real use case I would have dotfiles
+I didn't make any changes since this is a PoC but, for a real use case I would have dotfiles
 for the specific environment needed. 
 
 For example, this devpod is using a `go` image, but in my neovim configration files I load Python 
@@ -31,7 +31,7 @@ You can try out the same configuration that I have by following the instructions
 1. Optional if you want a GUI:
 [Install DevPod](https://devpod.sh/docs/getting-started/install) for your environment
 1. [Install the DevPod CLI](https://devpod.sh/docs/getting-started/install#optional-install-devpod-cli)
-1. Set your devpod provider to docker: `devpod provider use docker`
+1. Set your devpod provider to docker: ```devpod provider use docker```
 1. Verify your provider setting: `devpod provider list`
 1. Clone this repo
 1. Start Docker
