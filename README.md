@@ -4,7 +4,7 @@ This is a devpod for neovim Proof of Concept. It's using the open source [DevPod
 running on Docker. There are other provider options for running DevPod, such as using Kubernetes, or cloud providers 
 but I'm using Docker for this PoC.
 
-This is a great way to try Neovim without having to install it on your local machine. 
+This is a great way to try Neovim without having to install it on your local machine. And it even [reuses your local credentials](https://devpod.sh/docs/developing-in-workspaces/credentials), which makes development smooth!  
 
 I can definitely see the value of having a standard development environment that is portable. This would also be great 
 for use in training courses or for onboarding new developers, no matter which IDE you use.
