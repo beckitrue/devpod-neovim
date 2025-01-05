@@ -52,7 +52,7 @@ You can try out the same configuration that I have by following the instructions
 
 1. Optional if you want a GUI:
 [Install DevPod](https://devpod.sh/docs/getting-started/install) for your environment
-1. [Install the DevPod CLI](https://github.com/beckitrue/dotfiles/blob/main/install.sh)
+1. [Install the DevPod CLI](https://devpod.sh/docs/getting-started/install#optional-install-devpod-cli)
 1. Set your devpod provider to docker: `devpod provider use docker`
 1. Verify your provider setting: `devpod provider list`
 1. Clone this repo
