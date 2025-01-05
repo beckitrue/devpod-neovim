@@ -76,7 +76,7 @@ I can see the possiblity of running neovim as a container. Neovim is constantly 
 
 If I were to continue with this PoC, I would:
 
-- Configure the container to us `zsh` as the shell
+- Configure the container to use `zsh` as the shell
 - Write custom Features to install the packages that I need. 
 - Write a Dockerfile and docker compose file to add the packages that I need.
 
