@@ -50,14 +50,15 @@ and Node LSPs. This results in a (non-fatal) error message when running neovim o
 
 You can try out the same configuration that I have by following the instructions below:
 
-1. Optional if you want a GUI:[Install DevPod](https://devpod.sh/docs/getting-started/install) for your environment
-1. [Install the DevPod CLI](https://devpod.sh/docs/getting-started/install-cli)
+1. Optional if you want a GUI:
+[Install DevPod](https://devpod.sh/docs/getting-started/install) for your environment
+1. [Install the DevPod CLI](https://github.com/beckitrue/dotfiles/blob/main/install.sh)
 1. Set your devpod provider to docker: `devpod provider use docker`
 1. Verify your provider setting: `devpod provider list`
 1. Clone this repo
 1. Start Docker
 1. From the repo directory, run `devpod up devpod-neovim . --provider docker --dotfiles https://github.com/beckitrue/dotfiles`
-1. Log into the devpod `ssh devpod-neovim.devpod`
+1. Log into the devpod `ssh devpod-neovim.devpod` (no password required)
 
 ### Packages Installed
 
@@ -76,7 +77,7 @@ These binaries are installed by the `install.sh` script:
 - bat
 - lazygit
 
-The `install.sh` script uses `stow` to create the symlinks to the `.config` directory
+The `install.sh` script uses `stow` to create the symlinks from the dotfiles to the `.config` directory
 
 ## Usage
 
