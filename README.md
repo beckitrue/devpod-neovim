@@ -48,7 +48,7 @@ devpod provider list
 devpod up devpod-neovim . --provider docker --dotfiles https://github.com/beckitrue/dotfiles
 ```
 
-## Usage
+### Initial Run of Neovim
 
 1. Login to the devpod (no password needed): 
 ```
@@ -66,7 +66,7 @@ ssh devpod-neovim.devpod
 devpod stop devpod-neovim
 ```
 
-## Notes
+## Post Build Usage 
 
 After you've built the devpod once, you can start it again and reconnect to it without having to rebuild it. 
 ```
