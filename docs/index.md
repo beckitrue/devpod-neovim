@@ -39,6 +39,25 @@ for the specific environment.
 For example, this devpod is using a `go` image, but in my neovim configration files I load Python 
 and Node LSPs. This results in a (non-fatal) error message when running neovim on this devpod.
 
+### Packages Installed
+
+These packages are installed as `features` using the `devcontainer.json` file:
+
+- neovim - using the Feature that uses the source code
+- stow - for managing dotfiles
+- fzf - fuzzy finder
+- ripgrep - faster than grep 
+- starship - shell prompt
+- tmux - terminal multiplexer
+
+These binaries are installed by the `install.sh` script:
+
+- fd-find
+- bat
+- lazygit
+
+The `install.sh` script uses `stow` to create the symlinks from the dotfiles to the `.config` directory
+
 ## What I've Learned
 
 I can see the possiblity of running neovim as a container. Neovim is constantly evolving and requires a lot of updating and changing of plugins. Running it as a container would make it easier to make changes without breaking my local environment. And for someone who is a real developer, they might like having an IDE for each project that they work on.
