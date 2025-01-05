@@ -68,9 +68,10 @@ devpod stop devpod-neovim
 
 ## Notes
 
-After you've built the devpod once, you can start it again with 
+After you've built the devpod once, you can start it again and reconnect to it without having to rebuild it. 
 ```
 devpod start devpod-neovim
+ssh devpod-neovim.devpod
 ```
 
 ## Configuration Changes
