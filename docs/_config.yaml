@@ -13,5 +13,5 @@ plugins:
   - jekyll-avatar
   - jekyll-mentions
   - jekyll-relative-links
-title: "Devcontainer on DevPod PoC"
+title: "Devcontainer on DevPod PoC Using Neovim as the IDE"
 description: "Devcontainer on DevPod PoC - A proof of concept to run a devcontainer inside a DevPod"
