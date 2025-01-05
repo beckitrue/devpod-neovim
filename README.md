@@ -34,7 +34,7 @@ There are some issues that surfaced here, such as using `apt install neovim` Fea
 neovim that doesn't work with my Lazy configuration. However, there is a Feature that uses the source 
 code instead of `apt`, and that one works. 
 
-Using these Features makes wonder how secure they are, which is always a question about community-supported software. 
+Using these Features makes me wonder how secure they are, which is always a question about community-supported software. 
 Probably best to check out the source code before using them in a production environment.
 
 ## The DevPod
