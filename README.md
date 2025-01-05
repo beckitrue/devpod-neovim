@@ -28,8 +28,7 @@ spec at the time, and that's the key to getting the efficiency and consistency t
 
 Then, I saw this [video](https://youtu.be/9YG6QlzuNwM?si=oyDiFDQBx5LgIX-F) on how to use the `devcontainer.json` spec with DevPod 
 and realized that I could create a custom devpod using [Features](https://devpod.sh/docs/features) to install the packages.
-Features aren't available for all the packages that I wanted to use. That left me to install the remaining packages 
-manually after logging into the devpod.  
+Features aren't available for all the packages that I wanted to use and there are some other configuration settings that need to be done, so I wrote an [install.sh](https://github.com/beckitrue/dotfiles/blob/main/install.sh) script to make those changes. Now, everything I need to get `nvim` up and running is done when the devpod is created.
 
 There are some issues that surfaced here, such as using `apt install neovim` Feature installs an old version of 
 neovim that doesn't work with my Lazy configuration. However, there is a Feature that uses the source 
@@ -51,8 +50,10 @@ and Node LSPs. This results in a (non-fatal) error message when running neovim o
 
 You can try out the same configuration that I have by following the instructions below:
 
-1. [Install DevPod](https://devpod.sh/docs/getting-started/install) for your environment
+1. Optional if you want a GUI:[Install DevPod](https://devpod.sh/docs/getting-started/install) for your environment
 1. [Install the DevPod CLI](https://devpod.sh/docs/getting-started/install-cli)
+1. Set your devpod provider to docker: `devpod provider use docker`
+1. Verify your provider setting: `devpod provider list`
 1. Clone this repo
 1. Start Docker
 1. From the repo directory, run `devpod up devpod-neovim . --provider docker --dotfiles https://github.com/beckitrue/dotfiles`
@@ -69,21 +70,20 @@ These packages are installed as `features` using the `devcontainer.json` file:
 - starship - shell prompt
 - tmux - terminal multiplexer
 
-These binaries are specified as `postStartCommands` in the `devcontainer.json` file.
+These binaries are installed by the `install.sh` script:
 
-- install `fd-find` and `bat` and them to `~/.local/bin`
+- fd-find
+- bat
+- lazygit
 
-
-### Manual Installations after Logging In
-
-I manually run `stow` because I don't have an install script. That's something to do in the future.
-I used `stow` to manage the dotfiles after logging into the devpod.
-
-1. From the `~/dotfiles` directory, run `stow --target ~/.config .`
+The `install.sh` script uses `stow` to create the symlinks to the `.config` directory
 
 ## Usage
 
+1. Login to the devpd `ssh devpod-neovim.devpod`
 1. Run `nvim` to start neovim and use it as you would on your local machine
+1. From the main menu select `Lazy` or type `L`
+1. `Update` to update the plugins
 1. Logout by typing `exit`
 1. Stop the devpod after logging out by running `devpod stop devpod-neovim`
 
