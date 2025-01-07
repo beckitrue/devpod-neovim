@@ -15,7 +15,7 @@ You can read more about the approach I took to create this devpod [here](https:/
 
 You can see the demo of the devpod-neovim in action by clicking on the image below:
 
-[![Watch the video demo](https://img.youtube.com/vi/6vzl7Ba2uRE/0.jpg)](https://youtu.be/6vzl7Ba2uRE)
+[![Watch the video demo](https://img.youtube.com/vi/putFeErS9nM/0.jpg)](https://img.youtube.com/v1/putFeErS9nM/0.jpg)
 
 ## The DevPod
 
@@ -30,7 +30,7 @@ and Node LSPs. This results in a (non-fatal) error message when running neovim o
 
 You can try out the same configuration that I have by following the instructions below (assumes you have `docker` installed):
 
-### Initial Setup
+### Install DevPod
 
 1. Optional if you want a GUI:
 [Install DevPod](https://devpod.sh/docs/getting-started/install) for your environment
@@ -39,10 +39,13 @@ You can try out the same configuration that I have by following the instructions
 ```
 devpod provider use docker
 ```
-1. Verify your provider setting: 
+Verify your provider setting: 
 ```
 devpod provider list
 ```
+
+### Build the DevPod
+
 1. Clone this repo
 1. Start Docker
 1. From the repo directory, run: 
@@ -52,7 +55,8 @@ devpod up devpod-neovim . --provider docker --dotfiles https://github.com/beckit
 
 ### Initial Run of Neovim
 
-1. Login to the devpod (no password needed): 
+Login to the devpod (no password needed): 
+
 ```
 ssh devpod-neovim.devpod
 ```
