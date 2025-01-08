@@ -15,7 +15,7 @@ You can read more about the approach I took to create this devpod [here](https:/
 
 You can see the demo of the devpod-neovim in action by clicking on the image below:
 
-[![Watch the video demo](https://img.youtube.com/vi/putFeErS9nM/0.jpg)](https://img.youtube.com/v1/putFeErS9nM/0.jpg)
+[![Watch the video demo](https://img.youtube.com/vi/putFeErS9nM/0.jpg)](https://youtu.be/putFeErS9nM)
 
 ## The DevPod
 
