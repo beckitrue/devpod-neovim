@@ -26,7 +26,7 @@ for the specific environment needed.
 For example, this devpod is using a `go` image, but in my neovim configration files I load Python 
 and Node LSPs. This results in a (non-fatal) error message when running neovim on this devpod.
 
-### Plugins Installed
+### Neovim Plugins Installed
 
 <details>
 <summary>Expand to see list of plugins</summary>
