@@ -41,6 +41,66 @@ for the specific environment.
 For example, this devpod is using a `go` image, but in my neovim configration files I load Python 
 and Node LSPs. This results in a (non-fatal) error message when running neovim on this devpod.
 
+### Neovim Plugins Installed
+<details>
+<summary>Expand to see list of plugins</summary>
+[
+  "Comment.nvim",
+  "FTerm.nvim",
+  "LuaSnip",
+  "cmp-nvim-lsp",
+  "cmp_luasnip",
+  "copilot.vim",
+  "fidget.nvim",
+  "gen.nvim",
+  "git-worktree.nvim",
+  "gitsigns.nvim",
+  "go.nvim",
+  "goto-preview",
+  "guihua.lua",
+  "harpoon",
+  "indent-blankline.nvim",
+  "lazy.nvim",
+  "lazygit.nvim",
+  "lspkind.nvim",
+  "lua-utils.nvim",
+  "lualine.nvim",
+  "markdown-preview.nvim",
+  "mason-lspconfig.nvim",
+  "mason.nvim",
+  "neorg",
+  "noice.nvim",
+  "nui.nvim",
+  "nvim",
+  "nvim-cmp",
+  "nvim-dap",
+  "nvim-dap-go",
+  "nvim-dap-ui",
+  "nvim-dap-virtual-text",
+  "nvim-lspconfig",
+  "nvim-nio",
+  "nvim-notify",
+  "nvim-transparent",
+  "nvim-tree.lua",
+  "nvim-treesitter",
+  "nvim-web-devicons",
+  "obsidian.nvim",
+  "onedark.nvim",
+  "pathlib.nvim",
+  "plenary.nvim",
+  "snacks.nvim",
+  "telescope-fzf-native.nvim",
+  "telescope-symbols.nvim",
+  "telescope.nvim",
+  "twilight.nvim",
+  "vim-fugitive",
+  "vim-pencil",
+  "vim-sleuth",
+  "vim-surround",
+  "zen-mode.nvim"
+]
+</details>
+
 ### Packages Installed
 
 These packages are installed as `features` using the `devcontainer.json` file:
