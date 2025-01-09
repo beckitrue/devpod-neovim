@@ -42,6 +42,7 @@ For example, this devpod is using a `go` image, but in my neovim configration fi
 and Node LSPs. This results in a (non-fatal) error message when running neovim on this devpod.
 
 ### Neovim Plugins Installed
+
 <details>
 <summary>Expand to see list of plugins</summary>
 [
@@ -111,6 +112,7 @@ These packages are installed as `features` using the `devcontainer.json` file:
 - ripgrep - faster than grep 
 - starship - shell prompt
 - tmux - terminal multiplexer
+- fx - JSON viewer
 
 These binaries are installed by the `install.sh` script:
 
