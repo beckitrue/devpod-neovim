@@ -20,7 +20,7 @@ That seemed rather useless since I wasn't really saving any time. I didn't know 
 spec at the time, and that's the key to getting the efficiency and consistency that I want. IDE as Code basically.
 
 Then, I saw this [video](https://youtu.be/9YG6QlzuNwM?si=oyDiFDQBx5LgIX-F) on how to use the `devcontainer.json` spec with DevPod 
-and realized that I could create a custom devpod using [Features](https://devpod.sh/docs/features) to install the packages.
+and realized that I could create a custom devpod using [Features](https://containers.dev/implementors/features/) to install the packages.
 Features aren't available for all the packages that I wanted to use and there are some other configuration settings that need to be done, so I wrote an [install.sh](https://github.com/beckitrue/dotfiles/blob/main/install.sh) script to make those changes. Now, everything I need to get `nvim` up and running is done when the devpod is created. A future enhancement would be to write my own Feature to install the packages that I need.
 
 There are some issues that surfaced here, such as using `apt install neovim` Feature installs an old version of 
