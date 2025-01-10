@@ -32,7 +32,7 @@ Probably best to check out the source code before using them in a production env
 
 ## The DevPod
 
-I'm testing using the same [dotfiles](https://beckitrue/dotfiles) that I use on my local machine.
+I'm testing using the same [dotfiles](https://github.com/beckitrue/dotfiles) that I use on my local machine.
 I've largely copied the setup that Omerxx has - check out [his YouTube channel](https://www.youtube.com/@devopstoolbox) for more information on how to set up neovim, tmux, and other DevOps tools.
 
 I didn't make any changes since this is a PoC. But, for a real use case I would have dotfiles
