@@ -19,7 +19,7 @@ You can see the demo of the devpod-neovim in action by clicking on the image bel
 
 ## The DevPod
 
-I'm testing using the same [dotfiles](https://beckitrue/dotfiles) that I use on my local machine.
+I'm testing using the same [dotfiles](https://github.com/beckitrue/dotfiles) that I use on my local machine.
 I didn't make any changes since this is a PoC but, for a real use case I would have dotfiles
 for the specific environment needed. 
 
