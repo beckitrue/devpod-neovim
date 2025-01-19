@@ -107,11 +107,10 @@ devpod provider list
 
 ### Build the DevPod
 
-1. Clone this repo
 1. Start Docker
-1. From the repo directory, run: 
+1. In the terminal, run the following command to build the devpod: 
 ```
-devpod up devpod-neovim . --provider docker --dotfiles https://github.com/beckitrue/dotfiles
+devpod up https://github.com/beckitrue/devpod-neovim --provider docker --dotfiles https://github.com/beckitrue/dotfiles ide use none
 ```
 
 ### Initial Run of Neovim
@@ -143,9 +142,9 @@ ssh devpod-neovim.devpod
 
 ## Configuration Changes
 
-You can change the `.devpod/devcontainer.json` file to add or remove packages. Run 
+You can copy and change the `.devcontainer.json` file to add or remove packages. Run 
 ```
-devpod up devpod-neovim --recreate
+devpod up <path to .devcontainer> devpod-neovim --recreate
 ``` 
 after making changes to the `devcontainer.json` file.
 
