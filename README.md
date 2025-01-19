@@ -148,3 +148,6 @@ devpod up <path to .devcontainer> devpod-neovim --recreate
 ``` 
 after making changes to the `devcontainer.json` file.
 
+## Learn How to Create Your Own DevPod
+
+Here's a lab that walks you through creating your own devpod: [Create a DevPod Lab](https://github.com/beckitrue/devpod-devcontainer-labs)
